@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+@import url('https://fonts.googleapis.com/css2?family=SUSE');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 100%;
+}
+
+:root {
+    --primary-color: #cd2c22;
+    --secondary-color: #8b3eea;
+    --third-color: #001834;
+    --fourth-color: #ffffff;
+    --fifth-color: #161616;
+    /*fonts*/
+    --primary-font: SUSE;
+    --secondary-font: Rubik;
+}
+
+.row1 {
+    /* width: 1200px; */
+    margin: auto;
+    padding: 40px;
+}
+
+.column1 {
+    flex: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+p,
+li,
+a, label {
+    font-family: var(--secondary-font);
+    line-height: 2;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    line-height: 1.35;
+    margin: 0;
+    padding: 0;
+    color: var(--fifth-color);
+    padding: 15px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+a {
+    color: var(--fifth-color);
+    text-decoration: none;
+}
+
+button {
+    font-family: var(--secondary-font);
+    line-height: 2;
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 0;
+    padding: 10px 15px !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    color: var(--fourth-color);
+    background-color: var(--primary-color);
+    border: none;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--fourth-color);
+}
+
+.gap {
+    gap: 10px;
+}
+
+ul#ui-id-2 {
+    background-color: #fff;
+    padding: 5px;
+}
+
+ul#ui-id-1 {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.form {
+    label {
+        flex: 1;
+        margin-top: 10px;
+    }
+}
+
+form {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px 30px;
+    input, select, option, textarea {
+        width: 100% !important;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid var(--fifth-color);
+    }
+
+    label {
+        width: 100%;
+    }
+}
+
+.form1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row1 {
+        width: 100% !important;
+        padding: 40px 20px !important;
+        margin: auto !important;
+    }
+
+    h2 {
+        font-size: 26px !important;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+    }
+
+    .gap {
+        gap: 0 !important;
+    }
+
+    button {
+        font-size: 16px !important;
+    }
+
+    form {
+        padding: 15px !important;
+    }
+}
